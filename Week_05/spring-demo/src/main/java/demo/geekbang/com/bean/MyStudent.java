@@ -12,7 +12,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Student implements Serializable {
+public class MyStudent implements Serializable {
 
     private int id;
     private String name;
@@ -21,7 +21,7 @@ public class Student implements Serializable {
         System.out.println("hello...student");
     }
 
-    public Student create() {
-        return new Student(101, "KK101");
+    public MyStudent create() {
+        return new MyStudent(101, "KK101");
     }
 }

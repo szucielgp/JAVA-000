@@ -10,6 +10,7 @@ repositories {
 dependencies {
     runtimeOnly 'mysql:mysql-connector-java'
     compile 'com.zaxxer:HikariCP:3.1.0'
+    compile 'starter-demo'
 
 }
 
