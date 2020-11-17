@@ -1,0 +1,5 @@
+
+student:
+  enabled: true
+  id: 100
+  name: gavin

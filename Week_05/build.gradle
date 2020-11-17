@@ -1,0 +1,37 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.0'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
+}
+
+group = 'com.geekbang'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+subprojects {
+    /* 使用二进制插件 */
+    apply plugin: 'java' /* java是Gradle的核心插件，是内置的，内置插件不需要配置依赖路径 */
+    apply plugin: 'idea' /* 同上  让Gradle自动生成Intellij的项目文件*/
+    /* 注意gradle插件不再自动应用，所以这里需要指定 */
+    apply plugin: 'org.springframework.boot'
+    /* 依赖管理插件仍然是一个spring-boot-gradle-plugin传递依赖，所以无需在build.gradle配置中明确列出此依赖。 */
+    apply plugin: 'io.spring.dependency-management' /* 依赖管理，用来传递spring的依赖 */
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter'
+
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+        compileOnly 'org.projectlombok:lombok:1.18.4'
+        annotationProcessor 'org.projectlombok:lombok:1.18.4'
+        testCompileOnly 'org.projectlombok:lombok:1.18.4'
+        testAnnotationProcessor 'org.projectlombok:lombok:1.18.4'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
