@@ -8,9 +8,13 @@ spring-boot版本为：2.4.0
 
 1.实现了基于xml/configuration/ 引入starter  3种装配模式
 代码路径：
-单元测试路径：
+2.preparestatement等相关操作及HikariCP 操作db
+代码路径：
 
+上述单元测试的路径：
 
-2.dbbase相关操作及HikariCP 操作db
 
 #### 模块2：自定义实现starter （starter-demo）
+自定义starter实现，实现了自动化装配student等类
+代码路径：
+测试路径：
