@@ -1,13 +1,3 @@
-主要创建了四张表
-
-* 用户表
-* 店铺表
-* 商品表
-* 订单表
-
-具体sql 如下：
-
-```sql
 -- 用户表
 CREATE TABLE IF NOT EXISTS users (
   id                                 bigint(20) NOT NULL AUTO_INCREMENT,
@@ -77,5 +67,3 @@ CREATE TABLE IF NOT EXISTS orders (
     PRIMARY KEY (id,req_date)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8  PARTITION BY RANGE COLUMNS (req_date)(
         PARTITION P202011 VALUES LESS THAN ('20201130'));
-```
-
