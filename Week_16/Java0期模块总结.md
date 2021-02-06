@@ -32,7 +32,7 @@
 该模块总结学习内容如下：
 
 1. 多线程基础
-   1. 创建线程的N种方式
+   1. 创建线程的N种方式d
    2. Thread的状态流转
    3. 中断与异常处理
 2. 线程安全问题，以及java并发模块如何解决线程安全问题
@@ -61,7 +61,42 @@
 
 ## 4.Spring 和 ORM 等框架
 
+该模块总结学习内容如下：
+
+1. 了解Spring 技术发展
+2. 学习Spring 框架设计
+   1. Spring framework 6大模块
+   2. Spring AOP 学习
+   3. Spring Bean 生命周期
+   4. Spring Messaging 等技术
+3. Spring Boot学习
+   1.  Spring Boot核心原理
+   2. Spring Boot Starter 详解
+4. JDBC 与数据库连接池
+5. Spring 集成ORM，Spring Boot 集成ORM等模块
+6. Java8 相关模块内容
+7. 设计模式的学习
+
 ## 5.MySQL 数据库和 SQL
+
+该模块总结学习内容如下：
+
+1.  深入数据库原理
+2. 理解性能优化需要做的哪些事情
+   1. MySQL 配置优化
+   2. 数据库设计优化
+3. MySQL 事务与锁相关的知识
+   1. 事务可靠性模型ACID
+   2. Mysql 事务 隔离级别
+   3. Mysql 常见的锁
+   4. Undo log，Redo log
+   5. MVCC: 多版本并发控制
+4. MySQL常见一些场景分析
+   1. 数据更新
+   2. 模糊查询
+   3. 连接查询
+   4. 索引失效
+   5. 怎么实现主键ID ，高效实现分页，乐观锁与悲观锁的选择等
 
 ## 6.分库分表
 
